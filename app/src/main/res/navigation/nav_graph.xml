@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/introFragment2">
+    <fragment
+        android:id="@+id/introFragment2"
+        android:name="net.android.connectivechurch.ui.IntroFragment"
+
+        android:label="IntroFragment" >
+        <action
+            android:id="@+id/action_introFragment2_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/introFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="net.android.connectivechurch.ui.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_moreAboutFragment"
+            app:destination="@id/moreAboutFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="net.android.connectivechurch.ui.fragments.WebViewFragment"
+        android:label="WebViewFragment" />
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="net.android.connectivechurch.ui.fragments.VideoFragment"
+        android:label="VideoFragment" />
+    <fragment
+        android:id="@+id/moreAboutFragment"
+        android:name="net.android.connectivechurch.ui.fragments.MoreAboutFragment"
+        android:label="MoreAboutFragment" >
+        <action
+            android:id="@+id/action_moreAboutFragment_to_mainFragment"
+            app:popUpTo="@+id/destination_to_pop"
+            app:popUpToInclusive="true"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

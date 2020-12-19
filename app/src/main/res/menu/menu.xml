@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:src="@drawable/ic_logo">
+
+
+    <group android:checkableBehavior="none"
+        >
+        <item
+            android:id="@+id/nav_belong"
+            android:title="BELONG" />
+        <item
+            android:id="@+id/nav_about"
+            android:title="ABOUT" />
+        <item
+            android:id="@+id/nav_visit"
+            android:title="PLAN A VISIT" />
+        <item
+            android:id="@+id/nav_message"
+            android:title="MESSAGES" />
+        <item
+            android:id="@+id/nav_giving"
+            android:title="GIVING" />
+        <item
+            android:id="@+id/nav_groups"
+            android:title="GROUPS" />
+        <item
+            android:id="@+id/nav_comments"
+            android:title="COMMENTS" />
+        <item
+            android:id="@+id/nav_contact"
+            android:title="CONTACT" />
+
+        <item
+            android:icon="@drawable/ic_arizona_legales"
+            android:id="@+id/nav_facebook"
+            android:title="" />
+        <item
+            android:icon="@drawable/ic_logo_legales"
+            android:id="@+id/nav_instagram"
+            android:title="" />
+
+    </group>
+</menu>
